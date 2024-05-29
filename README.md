@@ -1,12 +1,12 @@
 <article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto">Basseta Application Journey Example</h1><a id="user-content-basseta-application-journey-example" class="anchor" aria-label="Permalink: Basseta Application Journey Example" href="#basseta-application-journey-example"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
-<p dir="auto">It's supported by Kotlin and Java</p>
-<p dir="auto"><strong>Handle Basseta library with any android project</strong></p>
+<p dir="auto">It's supported by C#</p>
+<p dir="auto"><strong>Handle Test Basseta library with any .net project</strong></p>
 <ul dir="auto">
 <li>Add the dependency</li>
 </ul>
 <blockquote>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>// Add Basseta lib
-implementation 'com.github.KamalKhalaf:Basseta_lib:2.0.2'
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>// Add Test Basseta lib
+dotnet add package MyTestPackage --source https://nuget.pkg.github.com/ameendhudi/index.json
 </code></pre><div class="zeroclipboard-container">
     <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="// Add Basseta lib
 implementation 'com.github.KamalKhalaf:Basseta_lib:2.0.2'" tabindex="0" role="button">
@@ -20,16 +20,15 @@ implementation 'com.github.KamalKhalaf:Basseta_lib:2.0.2'" tabindex="0" role="bu
   </div></div>
 </blockquote>
 <ul dir="auto">
-<li>Add it in your root build.gradle at the end of repositories:</li>
+<li>Create a nuget.config file in the root of the new project with below code:</li>
 </ul>
 <blockquote>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>  dependencyResolutionManagement {
-  	repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-  	repositories {
-  		mavenCentral()
-  		maven { url 'https://jitpack.io' }
-  	}
-  }
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>  <?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <packageSources>
+    <add key="github" value="https://nuget.pkg.github.com/ameendhudi/index.json" />
+  </packageSources>
+</configuration>
 </code></pre><div class="zeroclipboard-container">
     <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="  dependencyResolutionManagement {
   	repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
@@ -75,7 +74,8 @@ implementation 'com.github.KamalKhalaf:Basseta_lib:2.0.2'" tabindex="0" role="bu
 <li>To start Basseta application journey, just you need to call the below function:</li>
 </ul>
 <blockquote>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code> bassetaConfigration.showBassetaJourney()
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>  var myClass = new MyClass();
+            Console.WriteLine(myClass.SayHello("World"));
 </code></pre><div class="zeroclipboard-container">
     <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value=" bassetaConfigration.showBassetaJourney()" tabindex="0" role="button">
       <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
