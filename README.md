@@ -23,13 +23,13 @@ implementation 'com.github.KamalKhalaf:Basseta_lib:2.0.2'" tabindex="0" role="bu
 <li>Create a nuget.config file in the root of the new project with below code:</li>
 </ul>
 <blockquote>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>  <?xml version="1.0" encoding="utf-8"?>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate">  <?xml version="1.0" encoding="utf-8"?>
 <configuration>
   <packageSources>
     <add key="github" value="https://nuget.pkg.github.com/ameendhudi/index.json" />
   </packageSources>
 </configuration>
-</code></pre><div class="zeroclipboard-container">
+</pre><div class="zeroclipboard-container">
     <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="  dependencyResolutionManagement {
   	repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
   	repositories {
