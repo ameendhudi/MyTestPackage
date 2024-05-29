@@ -24,12 +24,12 @@ implementation 'com.github.KamalKhalaf:Basseta_lib:2.0.2'" tabindex="0" role="bu
 </ul>
 <blockquote>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code> 
- <!-- <?xml version="1.0" encoding="utf-8"?>
+ {{<?xml version="1.0" encoding="utf-8"?>
 <configuration>
   <packageSources>
     <add key="github" value="https://nuget.pkg.github.com/ameendhudi/index.json" />
   </packageSources>
-</configuration> -->
+</configuration>}}
 </code>
 </pre><div class="zeroclipboard-container">
     <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="  dependencyResolutionManagement {
