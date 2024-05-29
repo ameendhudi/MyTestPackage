@@ -23,12 +23,14 @@ implementation 'com.github.KamalKhalaf:Basseta_lib:2.0.2'" tabindex="0" role="bu
 <li>Create a nuget.config file in the root of the new project with below code:</li>
 </ul>
 <blockquote>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate">  <?xml version="1.0" encoding="utf-8"?>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code> 
+ <!-- <?xml version="1.0" encoding="utf-8"?>
 <configuration>
   <packageSources>
     <add key="github" value="https://nuget.pkg.github.com/ameendhudi/index.json" />
   </packageSources>
-</configuration>
+</configuration> -->
+</code>
 </pre><div class="zeroclipboard-container">
     <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="  dependencyResolutionManagement {
   	repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
@@ -45,7 +47,7 @@ implementation 'com.github.KamalKhalaf:Basseta_lib:2.0.2'" tabindex="0" role="bu
 </svg>
     </clipboard-copy>
   </div></div>
-</blockquote>
+<!-- </blockquote>
 <div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><strong>How does Basseta Library work (step-by-step) ?</strong></h2><a id="user-content-how-does-basseta-library-work-step-by-step-" class="anchor" aria-label="Permalink: How does Basseta Library work (step-by-step) ?" href="#how-does-basseta-library-work-step-by-step-"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
 <ul dir="auto">
 <li>Initalize instance and set the below configration</li>
@@ -69,7 +71,7 @@ implementation 'com.github.KamalKhalaf:Basseta_lib:2.0.2'" tabindex="0" role="bu
 </svg>
     </clipboard-copy>
   </div></div>
-</blockquote>
+</blockquote> -->
 <ul dir="auto">
 <li>To start Basseta application journey, just you need to call the below function:</li>
 </ul>
